@@ -1,6 +1,6 @@
 package byte;
 
-abstract ByteData(haxe.io.Bytes) {
+abstract ByteData(haxe.io.Bytes) from haxe.io.Bytes to haxe.io.Bytes {
 
 	public var length(get,never):Int;
 	inline function get_length() return this.length;
